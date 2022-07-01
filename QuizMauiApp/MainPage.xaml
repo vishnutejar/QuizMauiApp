@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizMauiApp.MainPage">
+    <Grid ColumnDefinitions="*,2*,*" RowDefinitions="*,*,*" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20">
+        <Image Source="logo.png" Grid.ColumnSpan="3" Grid.RowSpan="3" BackgroundColor="Transparent"/>
+        <Label IsVisible="False" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" Text="top-left" VerticalOptions="Start"/>
+        <Label IsVisible="False" Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="top-right" VerticalOptions="Start"></Label>
+        <Label FontSize="14" TextColor="Black" Grid.Row="2" Grid.Column="0" Text="Version: 1.0" HorizontalOptions="Start" VerticalOptions="End"></Label>
+        <HorizontalStackLayout Grid.Row="2" Grid.Column="2" VerticalOptions="End" HorizontalOptions="End" Spacing="10">
+            <Image HeightRequest="30" WidthRequest="30" Source="setting.png" Grid.ColumnSpan="3" Grid.RowSpan="3" BackgroundColor="Transparent"/>
+            <Label VerticalOptions="Center"  TextColor="Black" FontSize="14" Text="Settings" />
+
+        </HorizontalStackLayout>
+        <Frame BackgroundColor="#BBA0A040" BorderColor="Black"   Grid.Row="1" Grid.Column="1" Padding="5" Margin="5">
+            <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="5">
+                <Label TextColor="White" HorizontalOptions="Center" Text="Survey TitleSurvey TitleSurvey TitleSurvey TitleSurvey TitleSurvey TitleSurvey Title" FontSize="Caption" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+                <Button HorizontalOptions="Center" BackgroundColor="Black" Text="Get Started" FontAttributes="Bold" />
+
+            </VerticalStackLayout>
+
+        </Frame>
+    </Grid>
+</ContentPage>
